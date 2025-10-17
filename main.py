@@ -6,11 +6,11 @@ spaces = 0
 others = 0
 
 for char in input_str:
-    if char.isalpha():
+    if 'a' <= char <= 'z' or 'A' <= char <= 'Z':
         letters += 1
-    elif char.isdigit():
+    elif '0' <= char <= '9':
         digits += 1
-    elif char.isspace():
+    elif char == ' ':
         spaces += 1
     else:
         others += 1
