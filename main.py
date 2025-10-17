@@ -4,7 +4,7 @@ digits = 0
 spaces = 0
 others = 0
 for char in input_str:
-    if char.isalpha():
+    if 'a' <= char <= 'z' or 'A' <= char <= 'Z':
         letters += 1
     elif char.isdigit():
         digits += 1
